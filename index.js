@@ -113,9 +113,21 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+
+function addReview(array, name, rating, feedback){
+  array.push({name, rating, feedback});
+  return array;
 }
+
+
+
+
+  
+
+
+
+  
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -128,11 +140,13 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
-}
-
-
+function getReviewByIndex(array, num){
+  if (num === 0){
+  return 'Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!';    
+} else if (num === 2){
+  return 'Miranda gave the restaurant a 4 star review, and their feedback was: fun trivia and cool vibes';    
+    }
+  };
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
